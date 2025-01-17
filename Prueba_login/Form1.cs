@@ -35,6 +35,7 @@ namespace Prueba_login
             label1.Text = "Usuario";
             label2.Text = "Contraseña";
             button1.Text = "Iniciar";
+            button2.Text = "Registrar";
 
         }
 
@@ -51,12 +52,12 @@ namespace Prueba_login
                 }
                 else
                 {
-                    MessageBox.Show("contraseña incorrecta");
+                    MessageBox.Show("Usuario o contraseña incorrecta");
                 }
             }
             else
             {
-                MessageBox.Show("usuario no encontrado");
+                MessageBox.Show("Usuario o contraseña incorrecta\"");
             }
 
         }
@@ -82,6 +83,32 @@ namespace Prueba_login
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string nuevoUsuario = textBox4.Text;
+            string nuevaContraseña = textBox3.Text;
+
+            if (usuarios.ContainsKey(nuevoUsuario))
+            {
+                MessageBox.Show("El usuario ya existe");
+            }
+            else
+            {
+                usuarios.Add(nuevoUsuario, nuevaContraseña);
+                MessageBox.Show("Usuario registrado");
+            }
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged_1(object sender, EventArgs e)
         {
 
         }
