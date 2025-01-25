@@ -67,7 +67,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(159, 33);
+            this.textBox2.Location = new System.Drawing.Point(126, 33);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(95, 20);
             this.textBox2.TabIndex = 3;
@@ -75,7 +75,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(301, 30);
+            this.button1.Location = new System.Drawing.Point(240, 30);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -85,7 +85,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(3, 148);
+            this.button2.Location = new System.Drawing.Point(240, 201);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 5;
@@ -95,7 +95,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(190, 148);
+            this.textBox3.Location = new System.Drawing.Point(121, 204);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 6;
@@ -103,7 +103,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(84, 148);
+            this.textBox4.Location = new System.Drawing.Point(3, 204);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 7;

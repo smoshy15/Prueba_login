@@ -92,6 +92,13 @@ namespace Prueba_login
             string nuevoUsuario = textBox4.Text;
             string nuevaContraseña = textBox3.Text;
 
+            if (string.IsNullOrWhiteSpace(nuevoUsuario) || string.IsNullOrWhiteSpace(nuevaContraseña))
+            {
+                MessageBox.Show("Usuario o contraseña vacios");
+                return;
+            }
+
+
             if (usuarios.ContainsKey(nuevoUsuario))
             {
                 MessageBox.Show("El usuario ya existe");
@@ -100,6 +107,8 @@ namespace Prueba_login
             {
                 usuarios.Add(nuevoUsuario, nuevaContraseña);
                 MessageBox.Show("Usuario registrado");
+                textBox4.Clear();
+                textBox3.Clear();
             }
         }
 
